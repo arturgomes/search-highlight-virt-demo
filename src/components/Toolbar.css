@@ -1,0 +1,131 @@
+.toolbar {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: #fff;
+	border-bottom: 1px solid #d0d0d0;
+	padding: 0.55rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+	font-size: 13px;
+}
+
+.toolbar-row {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	flex-wrap: wrap;
+}
+
+.toolbar .field {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.toolbar .field.flex {
+	flex: 1 1 240px;
+	min-width: 200px;
+}
+
+.toolbar .field.flex input[type="text"] {
+	flex: 1;
+}
+
+.toolbar input[type="number"] {
+	width: 6.5ch;
+	padding: 0.2rem 0.35rem;
+	font-size: 13px;
+}
+
+.toolbar input[type="text"] {
+	padding: 0.25rem 0.5rem;
+	font-size: 13px;
+	min-width: 16ch;
+}
+
+.toolbar .btn {
+	padding: 0.25rem 0.6rem;
+	background: #f0f0f0;
+	border: 1px solid #c0c0c0;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.toolbar .btn:hover:not(:disabled) {
+	background: #e2e2e2;
+}
+
+.toolbar .btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.toolbar .checkbox {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	cursor: pointer;
+}
+
+.toolbar .indicator {
+	font-variant-numeric: tabular-nums;
+	color: #555;
+	min-width: 6ch;
+	text-align: right;
+}
+
+.toolbar .divider {
+	width: 1px;
+	height: 1.3rem;
+	background: #d0d0d0;
+}
+
+.toolbar .virtualize {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.toolbar .segment {
+	padding: 0.2rem 0.7rem;
+	background: #f0f0f0;
+	border: 1px solid #c0c0c0;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.toolbar .segment:first-of-type {
+	border-radius: 3px 0 0 3px;
+	border-right-width: 0;
+}
+
+.toolbar .segment:last-of-type {
+	border-radius: 0 3px 3px 0;
+}
+
+.toolbar .segment.active {
+	background: #2a6dd4;
+	color: #fff;
+	border-color: #1a4d99;
+}
+
+.toolbar .segment.active.danger {
+	background: #c83a00;
+	border-color: #8a2800;
+}
+
+.toolbar .stats {
+	display: inline-flex;
+	gap: 0.9rem;
+	color: #555;
+	font-variant-numeric: tabular-nums;
+}
+
+.toolbar .stats strong {
+	color: #111;
+}
