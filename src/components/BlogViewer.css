@@ -1,0 +1,38 @@
+.outer-editor {
+	flex: 1;
+	overflow: auto;
+	background: #fafafa;
+}
+
+.blog-editor {
+	position: relative;
+	max-width: 80ch;
+	margin: 0 auto;
+	padding: 1.5rem 2rem 4rem;
+	font-family: 'Courier New', Consolas, monospace;
+	color: #222;
+	line-height: 1.55;
+}
+
+.paragraph {
+	margin: 0 0 0.65rem 0;
+	white-space: pre-wrap;
+}
+
+.search-layer {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+.search-layer .highlight {
+	background: rgba(255, 220, 0, 0.55);
+	border-radius: 2px;
+	transition: background 80ms ease;
+}
+
+.search-layer .highlight-selected {
+	background: rgba(255, 120, 0, 0.75);
+	outline: 1px solid #d54a00;
+	z-index: 1;
+}
